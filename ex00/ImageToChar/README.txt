@@ -5,7 +5,7 @@
 ###  Enter symbols to print images and path to image
 
 WHITE_CHAR=.
-BLACK_CHAR=Y
+BLACK_CHAR=O
 IMAGE_PATH=/home/myael/java-piscine/piscine-day-04/ex00/ImageToChar/heart.bmp
 
 # ---------------------------------------------------------------------------------- #
@@ -20,5 +20,5 @@ mkdir -p target
 javac -d ./target src/java/edu/school21/printer/*/*.java
 
 # start program
-java -cp target edu.school21.printer.app.Main ${BLACK_CHAR} ${WHITE_CHAR} ${IMAGE_PATH}
+java -classpath target edu.school21.printer.app.Main ${BLACK_CHAR} ${WHITE_CHAR} ${IMAGE_PATH}
 
